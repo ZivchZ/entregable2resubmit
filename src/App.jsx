@@ -3,7 +3,6 @@ import axios from 'axios'
 import './App.css'
 import Loading from './components/Loading'
 import Weather from './components/Weather'
-import SearchCountry from './components/SearchCountry'
 
 function App() {
 
@@ -47,7 +46,7 @@ function App() {
         <nav className='weather-nav'>
             <h1>Weather App</h1>
             <div className='div-input'>
-              <i class='bx bx-search-alt-2'></i>
+              <i className='bx bx-search-alt-2'></i>
               <form onSubmit={(e) => submit(e)}>
                 <input type="text" placeholder="Buscar una ciudad"
                 value={searchName}
@@ -59,9 +58,9 @@ function App() {
             
             {
               isOn === true 
-              ?  <button onClick={darkMode} className={`${isOn ? 'dark-button' : ''}`}><i class='bx bx-toggle-right'></i></button>
+              ?  <button onClick={darkMode} className={`${isOn ? 'dark-button' : ''}`}><i className='bx bx-toggle-right'></i></button>
               : <button onClick={darkMode} className={`${isOn ? '' : 'light-button'}`}>
-              <i class='bx bx-toggle-left'></i>
+              <i className='bx bx-toggle-left'></i>
               </button>
             }
         </nav>
