@@ -77,10 +77,6 @@ function App() {
                 isOn={isOn}
         />
               }
-        {/* <SearchCountry 
-          url={searchName}
-          isOn={isOn}
-        /> */}
             </ul>
           </div>
         </main>
