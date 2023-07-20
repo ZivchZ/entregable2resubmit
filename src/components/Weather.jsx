@@ -18,10 +18,10 @@ const Weather = ({url, isOn}) => {
             <li className="main-list">
                 {   
                     celsius < 20 
-                    ? <img src="./src/assets/icons/7.svg" alt="weather-img" />
+                    ? <img src="/icons/7.svg" alt="weather-img" />
                     : celsius < 35 
-                    ? <img src="./src/assets/icons/2.svg" alt="weather-img" />
-                    : <img src="./src/assets/icons/1.svg" alt="weather-img" />
+                    ? <img src="/icons/2.svg" alt="weather-img" />
+                    : <img src="/icons/1.svg" alt="weather-img" />
                 }
                 <h2>{`${changeGrade === true ? celsius : farenheit}°`}</h2>
                 <p>Viento: {url.wind?.speed}</p>
